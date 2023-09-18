@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Poppins:wght@200;400;700&display=swap');
+
+:root{
+    --dark-blue: rgba(18,58,93,255);
+    --light-gray: rgb(145,165,183);
+    --black: rgb(19,19,19);
+    --orange: rgb(247, 146, 30);
+    --hover-orange: rgb(236, 147, 45);
+    --white: rgba(250,250,250,255);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapp{
+}
+
+/* hidden desktop nav */
+.desktop ul{
+    display: none;
+}
+
+/* HEADER SECTION */
+header{
+    background-color: var(--dark-blue);
+    padding: 2rem 1rem;
+}
+
+.header-wrapp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 3rem;
+    color: var(--dark-);
+}
+
+.title-container h1{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.btn{
+    background-color: var(--orange);
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btn a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: var(--hover-orange);
+}
+
+/* MAIN SECTION */
+
+/* general attributes */
+.title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.paragraph{
+    font-size: 1.5rem;
+}
+
+section .wrapp{
+    padding: 2rem;
+}
+
+/* top section */
+.top{
+    background-image: url(pool-bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.top .wrapp{
+    padding: 2rem;
+    height: 100%;
+}
+
+.card{
+    background-color: #0005;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    height: 100%;
+}
+
+.card .titles-container{
+    text-align: center;
+}
+
+.card .title{
+    margin-bottom: 1rem;
+}
+
+.card .arrow-icon{
+    width: 5rem;
+}
+
+/* services section */
+.services-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.services-cards__card{
+    max-width: 450px;
+    background-color: var(--dark-blue);
+    border-radius: 2rem;
+    overflow: hidden;
+    color: var(--white);
+}
+
+.services-cards__card .card-img{
+    width: 100%;
+}
+
+.services-cards__card .card__content{
+    padding: 2rem; 
+}
+
+.services-cards__card .card__content h4{
+    font-weight: bold;
+}
+
+/* about us section */
+
+.about-us__img{
+    width: 100%;
+}
+
+/* contact section */
+
+.list{
+    padding: 3rem 0;
+}
+
+.list__item{
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.list-icon{
+    width: 5rem;
+}
+
+/* FOOTER SECTION */
+footer{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+footer .wrapp{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .wrapp h4{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+
+    .wrapp,
+    section .wrapp,
+    .top .wrapp{
+        padding: 2rem 4rem;
+    }
+
+    
+
+    .desktop{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .desktop ul{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .desktop__item a{
+        font-size: 1.5rem;
+        color: var(--white);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .btn{
+        padding: 1rem 2rem;
+    }
+
+    .services-cards{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        gap: 4rem;
+    }
+    
+    .services-cards__card{
+        background-color: var(--dark-blue);
+        border-radius: 2rem;
+        overflow: hidden;
+        color: var(--white);
+    }
+}
