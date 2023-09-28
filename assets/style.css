@@ -165,9 +165,51 @@ section .wrapp{
 
 /* about us section */
 
+.about-us .title{
+    margin-bottom: 2rem;
+}
+
 .about-us__img{
     width: 100%;
 }
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list .list-item h4{
+    font-weight: bold;
+}
+
+/* section four */
+.section-four .wrapp .title{
+    margin-bottom: 2rem;
+}
+
+.list-container h4:first-child{
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+/* section five */
+.section-five .wrapp{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-five .wrapp .subtitle{
+    font-weight: bold;
+}
+
+.list-container h4:first-child{
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
 
 /* contact section */
 
